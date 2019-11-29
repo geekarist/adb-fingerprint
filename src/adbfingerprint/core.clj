@@ -1,4 +1,5 @@
-(ns adb-fingerprint.core
+(ns adbfingerprint.core
+  (:gen-class)
   (:require [clojure.string :as str])
   (:import (java.util Base64)
            (java.security MessageDigest)))

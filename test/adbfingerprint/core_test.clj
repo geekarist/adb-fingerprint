@@ -1,6 +1,6 @@
-(ns adb-fingerprint.core-test
+(ns adbfingerprint.core-test
   (:require [clojure.test :refer :all]
-            [adb-fingerprint.core :refer :all]))
+            [adbfingerprint.core :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."
