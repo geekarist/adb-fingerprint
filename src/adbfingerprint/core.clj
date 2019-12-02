@@ -12,8 +12,6 @@
   (let [decoded (.decode (Base64/getDecoder) encoded)]
     decoded))
 
-(defn print-then-return [x] (println x) x)
-
 (defn encode-md5 [bytes]
   (let [md5 (MessageDigest/getInstance "MD5")
         digested (.digest md5 bytes)]
