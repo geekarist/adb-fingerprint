@@ -4,7 +4,7 @@
   (:import (java.util Base64)
            (java.security MessageDigest)))
 
-(defn read-pub-key! []
+(defn read-pub-key []
   (slurp (str (System/getenv "HOME")
               "/.android/adbkey.pub")))
 
@@ -24,7 +24,7 @@
   (str/join ":" coll))
 
 (defn -main []
-  (-> (read-pub-key!)
+  (-> (read-pub-key)
       (str/split #" ")
       (first)
       (decode-base64)
